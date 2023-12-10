@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { PageWrapper } from '../utils/PageWrapper';
 import { Step } from '../general/step';
 
 export const Sample = () => {
+	const [formStep, setFormStep] = useState('list')
 	const steps = [
 		{
 			icon: 'list',
@@ -34,9 +35,9 @@ export const Sample = () => {
 			<div id="signup-form" className="my-8 max-w-[75%] center-flex shadow-lg">
 				<div id="left" className="flex flex-col w-3/4 p-8">
 					<h2 className="text-center text-xl font-bold mb-8">Race Title</h2>
-					<div id="signup-step" className="center-flex space-x-6">
+					<div id="signup-step" className="center-flex space-x-4">
 						{steps.map((item, index) => (
-							<Step {...item} index={index} key={index} />
+							<Step {...item} index={index} handleClick={setFormStep} formStep={formStep} key={index} />
 						))}
 					</div>
 					<div id="form-title" className="">

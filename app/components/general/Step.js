@@ -1,19 +1,44 @@
 import React from 'react';
 
+import classNames from "classnames";
+
 export const Step = ({
-    icon,
-    index,
-    title
+	icon,
+	index,
+	title,
+	formStep,
+	handleClick
 }) => {
 	return (
-        <div className="step center-flex space-x-4">
-            <div id="icon" className='center-flex items-center bg-orange-500 rounded-full'>
-                <span className="material-symbols-outlined">{icon}</span>
-            </div>
-            <div id="step-info" className='flex flex-col'>
-                <span className="">Step {index + 1}</span>
-                <span className="">{title}</span>
-            </div>
-        </div>
+		<div onClick={(() => handleClick(icon))} className={classNames(
+			"step",
+			"center-flex",
+			"space-x-2",
+			"hover:cursor-pointer",
+			{ 'text-gray-500': icon !== formStep }
+		)}>
+			<div id="icon" className={classNames(
+				'center-flex',
+				'items-center',
+				'rounded-full',
+				'px-3',
+				{ 'text-white': icon === formStep },
+				{ 'bg-gray-100': icon !== formStep },
+				{ 'bg-orange-500': icon === formStep },
+				{ 'shadow-md': icon === formStep },
+			)}>
+				<span className="material-symbols-outlined">{icon}</span>
+			</div>
+			<div id="step-info" className={classNames(
+					'flex',
+					'flex-col',
+					'font-bold',
+					'text-sm',
+					{ 'text-gray-500': icon !== formStep }
+				)}>
+				<span className={classNames({ 'text-orange-500': icon === formStep })}>Step {index + 1}</span>
+				<span className={classNames({ 'text-black': icon === formStep })}>{title}</span>
+			</div>
+		</div>
 	)
 }
