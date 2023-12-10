@@ -15,7 +15,7 @@ app.get('*', (req,res) => {
 	res.send(`<!DOCTYPE html>
 			<head>
 				<title>Online Race Signup</title>
-				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 				<link href="/css/style.css" rel="stylesheet">
 			</head>
 			<body>
@@ -26,7 +26,7 @@ app.get('*', (req,res) => {
 						</StaticProvider>
 					</StaticRouter>)}
 				</div>
-				<script src="/bundle.js" defer></script>
+				<script src="/js/bundle.js" defer></script>
 			</body>
 		</html>
 	`);

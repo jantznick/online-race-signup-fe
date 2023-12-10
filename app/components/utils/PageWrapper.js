@@ -8,7 +8,7 @@ export const PageWrapper = ({children}) => {
                 <div id="links" className='space-x-8'>
                     <a href="#" className="link">About Us</a>
                     <a href="#" className="link">Pricing</a>
-                    <a href="#" className="link">Demo</a>
+                    <a href="/demo" className="link">Demo</a>
                     <a href="#" className="link">Documentation</a>
                     <a href="#" className="link">Help Desk</a>
                     <a href="#" className="link">Contact</a>

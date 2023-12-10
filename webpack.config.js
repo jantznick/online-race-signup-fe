@@ -18,7 +18,7 @@ const browserConfig = {
 	entry: "./clientRender.js",
 	output: {
 	  path: __dirname,
-	  filename: "./public/bundle.js"
+	  filename: "./public/js/bundle.js"
 	},
 	devtool: "cheap-module-source-map",
 	module: {

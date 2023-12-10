@@ -4,9 +4,9 @@
   "description": "",
   "main": "clientRender.js",
   "scripts": {
-    "start": "npm run build-watch-css & npm run build-site & npm run build-server",
-    "build-server": "nodemon ./built/server.js",
-    "build-site": "NODE_ENV=development webpack -w",
+    "start": "npm run build-app & npm run build-watch-css & npm run run-server",
+    "run-server": "nodemon ./built/server.js",
+    "build-app": "NODE_ENV=development webpack -w",
     "build-css": "tailwindcss -i ./app/styles/app.css -o ./public/css/style.css",
     "build-watch-css": "tailwindcss -i ./app/styles/app.css -o ./public/css/style.css --watch"
   },
