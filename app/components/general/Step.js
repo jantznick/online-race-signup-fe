@@ -36,8 +36,14 @@ export const Step = ({
 					'text-sm',
 					{ 'text-gray-500': icon !== formStep }
 				)}>
-				<span className={classNames({ 'text-orange-500': icon === formStep })}>Step {index + 1}</span>
-				<span className={classNames({ 'text-black': icon === formStep })}>{title}</span>
+				<span className={classNames(
+					{ 'text-orange-500': icon === formStep },
+					{ 'drop-shadow-sm': icon === formStep }
+				)}>Step {index + 1}</span>
+				<span className={classNames(
+					{ 'text-black': icon === formStep },
+					{ 'drop-shadow-sm': icon === formStep }
+				)}>{title}</span>
 			</div>
 		</div>
 	)
