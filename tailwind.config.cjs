@@ -1,5 +1,5 @@
 module.exports = {
-    content: ['./app/components/**/*.{js,jsx}', './serverRender.js'],
+    content: ['./app/components/**/*.{js,jsx}', './serverRender.js', './public/index.html'],
     theme: {
         screens: {
             sm: '480px',
