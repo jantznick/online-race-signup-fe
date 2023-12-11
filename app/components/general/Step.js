@@ -13,9 +13,10 @@ export const Step = ({
 		<>
 			<div onClick={(() => handleClick(icon))} className={classNames(
 				"step",
-				"center-flex",
+				"flex",
+				"justify-center",
+				"mx-auto",
 				"space-x-2",
-				'md:mx-3',
 				"hover:cursor-pointer",
 				{ 'text-gray-500': icon !== formStep }
 			)}>
@@ -36,8 +37,12 @@ export const Step = ({
 				<div id="step-info" className={classNames(
 						'flex-col',
 						'font-bold',
+						'justify-center',
 						'text-sm',
+						'flex',
+						'w-max',
 						'hidden',
+						'xl:flex',
 						{ 'md:flex': icon === formStep }
 					)}>
 					<span className={classNames(
