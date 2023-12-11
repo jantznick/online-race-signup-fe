@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { PageWrapper } from '../utils/PageWrapper';
-import { Step } from '../general/step';
+import { Step } from '../general/Step';
 
 export const Sample = () => {
 	const [formStep, setFormStep] = useState('list')
