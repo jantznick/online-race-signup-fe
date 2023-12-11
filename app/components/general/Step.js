@@ -22,6 +22,8 @@ export const Step = ({
 				'items-center',
 				'rounded-full',
 				'px-3',
+				'w-8',
+				'h-8',
 				{ 'text-white': icon === formStep },
 				{ 'bg-gray-100': icon !== formStep },
 				{ 'bg-orange-500': icon === formStep },
