@@ -5,7 +5,10 @@ export const PageWrapper = ({children}) => {
         <>
             <header className='bg-blue-500 p-8 flex flex-wrap justify-between'>
                 <h1 className='font-bold text-3xl'>Online Race Signup</h1>
-                <div id="links" className='space-x-8'>
+                <div className="flex items-center transition-all hover:cursor-pointer hover:text-gray-600 md:hidden">
+                    <span className="material-symbols-outlined text-[2rem]">menu</span>
+                </div>
+                <div id="links" className='lg:space-x-8 hidden md:space-x-2 md:flex'>
                     <a href="#" className="link">About Us</a>
                     <a href="#" className="link">Pricing</a>
                     <a href="/demo" className="link">Demo</a>

@@ -19,11 +19,6 @@ export const Sample = () => {
 			description: 'Tell us about yourself.',
 			formInstructions: 'Please fill in your details so we could contact you.'
 		}, {
-			icon: 'credit_card',
-			title: "Payment Info",
-			description: 'Payment information',
-			formInstructions: 'Please enter payment information.'
-		}, {
 			icon: 'health_and_safety',
 			title: 'Emergency Contact',
 			description: '',
@@ -33,6 +28,11 @@ export const Sample = () => {
 			title: 'Terms and Conditions',
 			description: '',
 			formInstructions: ''
+		}, {
+			icon: 'credit_card',
+			title: "Payment Info",
+			description: 'Payment information',
+			formInstructions: 'Please enter payment information.'
 		}
 	]
 
